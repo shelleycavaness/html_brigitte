@@ -1,0 +1,3 @@
+jquery-min.js et zoombox pour le zoom sur les images.Creation d'un dossier zoombox-plugin dans lequel j'introduis 2 fichiers zoombox.css avec la mise en forme du zoom et zoombox.js permettant d'obtenir les effets visuels. 
+En fin de page sont introduits : un lien vers un fichier jquery qui permet de prendre dans la bibliothèque de script, celui dont l'effet à besoin pour fonctionner correctement
+

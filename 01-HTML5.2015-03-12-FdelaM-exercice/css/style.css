@@ -1,0 +1,115 @@
+* {
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box; 
+box-sizing: border-box;
+margin:0;
+padding:0;
+} 
+
+
+body {
+    background-image: url(../images/fond2015.jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: arial;
+    
+}
+#container{
+    border: 5px dotted #ffe874;
+    display: inline-block;
+    margin-left: 290px;
+    width: 850px;
+    background-color: white;
+}
+
+
+header{
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+}
+
+header #sceau{
+    margin-left: 53%;
+}
+#logo-mairie {
+    margin-left: 62%;
+}
+
+header nav ul{    
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    
+    list-style-type: none;
+    background-color: aqua;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding-right: 15px;
+    color:white;
+    font-size: 14px;
+    margin-right: 25%;
+    flex-wrap: nowrap;
+}
+section{
+    width: 590px;   
+    padding-top: 15px;
+    display:inline-block;
+}
+
+#bloc-large{
+    padding-bottom: 10px;
+}
+cite{
+    color:#d30029 ;
+}
+section .bloc-etroit{
+   display: inline-block; 
+padding: 10px;
+}
+
+section #rv{
+    color: cornflowerblue;
+}
+
+
+aside {
+    width:250px;
+    margin: 0;
+    position: absolute;
+    top: 250px; 
+    left:882px;
+    border: 8px solid #ffe874;
+}
+/*#bloc-droit img{
+    border: 5 15 5 10px solid #ffe874;
+}*/
+h3{
+    background-color: darkblue;
+    color: white;
+    padding top: 15px;
+    font-size: 12px;
+    
+    text-align: right;
+}
+h3 span{
+    background-color: #d30029;
+    padding: 0px 10px 0px 10px;
+}
+
+
+aside h3{
+    font-size: 10px;
+}
+
+footer{
+    background-color: #d30029;
+    color: white;
+    height: 15px; 
+    clear: both;
+    
+}
+footer p{
+    text-align: center;
+}

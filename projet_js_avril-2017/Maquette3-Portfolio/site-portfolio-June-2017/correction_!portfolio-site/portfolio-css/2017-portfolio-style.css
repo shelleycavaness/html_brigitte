@@ -1,0 +1,311 @@
+* {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-o-box-sizing:border-box;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+} 
+
+/* declaration pour navigateurs n'implémentant pas main, aside et summary */
+html, body, main, section, article, aside, details, summary {
+	display:block;
+}
+
+/* commun à toute la page */
+a {
+	text-decoration:none;
+}
+a img{
+	border:0;
+	}
+h1, h2, h3, p {
+		padding:5px 0;
+	}
+	
+	
+/* body */
+body {
+	font-family:"century gothic", sans-serif;
+	font-size:13px;
+}
+
+/* nav */
+nav {
+	width:330px;
+	height:100%;
+	position:fixed;
+	background-color:#8B2322;
+	text-align:right;
+	font-family:league_gothicregular;
+}
+nav ul {
+	padding-top:75px;
+	padding-right:30px;
+	list-style-type:none;
+}
+nav ul li {
+	font-size:34px;
+	line-height:42px;
+	text-transform:uppercase;
+	}
+nav ul li a {
+	color:#fff;
+	}
+nav ul li a:hover{
+	color:#000;
+}	
+
+/* main */
+main {
+	width: 660px; 
+	text-align:justify;
+	margin-left:370px;
+}
+
+/* commun à toutes les sections */
+section h1, section h2, section p.sous-titre {
+	text-align:right;
+	font-family:league_gothicregular;
+}
+section h1, section h2, section h3 {
+	font-size:30px;
+	font-weight:normal;
+}
+section p.sous-titre {
+	color:#d7d7d7;
+	border-bottom:10px solid #f2f2f2;
+	font-size:20px;
+	margin-bottom:40px;
+}
+section h3 {
+	margin:30px 0;
+	font-family:league_gothicregular;
+	color:#8B2322;
+	font-size:25px;
+	text-transform:uppercase;
+}
+.zone-separation, .zone-separation-vide {
+	height:10px;
+	margin:20px 0 ;
+	clear:both;
+}
+.zone-separation {
+	border-bottom:1px dashed #cacaca;
+}
+
+/* specifique à la section accueil */
+section#accueil {
+	padding-top:50px;
+}
+img#portrait {
+	float:left;
+	margin-right:20px;
+	cursor:pointer; /* modifie l'aspect du curseur : une main au lieu de la fleche */
+}
+div#competences {
+	padding:15px 0 20px 30px;
+}
+div#competences img {
+	float:left;
+	padding-right:10px;
+}
+article {
+	display:inline-block;
+	vertical-align:top;
+	width:187px; 
+}
+article#second {
+	margin:0 30px;
+}
+
+
+
+/* specifique à la section realisations */
+section#realisations {
+	padding-top:100px;
+}
+
+section#realisations ul {
+	list-style-type:none;
+}
+section#realisations ul li {
+	display:inline-block;
+	vertical-align:top;
+	width:187px;
+	margin:15px;
+}
+section#realisations img  {
+	border:4px solid #e1e1e1;
+}
+
+
+/* specifique à la section contact */
+section#contact {
+	padding-top:100px;
+	padding-bottom:100px;
+}
+section#contact aside h3 {
+	margin-top:0;
+}
+aside#formulaire {
+	display:inline-block;
+	vertical-align:top;
+	width:380px; 
+	margin-right:40px;	
+}
+aside#infos-contact  {
+	display:inline-block;
+	vertical-align:top;
+	width:230px; 
+}
+aside#infos-contact a, aside#infos-contact address {
+	color:#8B2322;
+	font-weight:bold;
+	font-style:normal;
+}
+aside#infos-contact address {
+	margin-bottom:25px;
+}
+h3#reseaux {
+	padding-top:50px;
+}
+p#icones {
+	margin:10px 0;
+}
+p#icones a {
+	margin: 2px;	
+}
+
+/* commun aux boutons voir + et google map */
+details {
+	/* display:block; déjà déclaré pour les navigateurs n'implémentant pas <details> */
+	margin:20px 0;
+	text-align:right;
+}
+summary {
+	/* display:block; déjà déclaré pour les navigateurs n'implémentant pas <summary> */
+	padding:5px 10px;
+	background-color:#8B2322;
+	cursor:pointer;	
+	border:0;
+	font-family:league_gothicregular;
+	font-size:14px;
+	font-weight:normal;
+	color:#fff;
+}
+details div {
+	text-align:justify;
+	width: 628px;
+	position:absolute; /* permet de stabiliser la suite du contenu */
+	left:400px; /* permet à chaque div de chaque bloc détail de partir à 400px de la gauche */ 
+	padding:10px;
+	background-color:#F2F2F2;
+}
+/* Supprime l'icône par défaut (fleche), remplacée par + et - */
+summary::-webkit-details-marker {
+	display: none;
+}
+
+summary:after {
+	content: " +"; /* essai avec le code /2602 pour remplacer le symbole + par un autre symbole : un parapluie ouvert  Voir la table des caracteres unicode pour les symboles et pictogrammes : https://unicode-table.com/fr/blocks/miscellaneous-symbols-and-pictographs/*/
+	color: #fff;
+	float: right; /* par défaut l'icone est à droite, si on veut la positionner à gauche float: left;*/
+	line-height:30px;
+	margin: -5px 5px 0 0;
+	padding: 0;
+	width: 20px;
+}
+
+details[open] summary:after {
+	content: " -";  
+}
+
+/* @media screen and (max-width:600px) {*/
+@media screen and (max-width:600px) {
+	.nomob { /* tout ce qui a été identifié par nomob est supprimé */
+		display:none;
+	}
+	nav {
+		text-align:center;
+		height:80px;  /* modification */
+		width:100%;
+		z-index:2; /* laissée en position fixed, la nav parait toujours "au dessus" de details div */
+	}
+	nav ul {
+		margin-top:-60px; /* modification */
+	}
+	nav ul li {
+		display:inline; /* items les uns à côté des autres */
+	}
+	nav ul li a {
+		font-size:24px;
+		line-height:30px;
+		padding:0 15px;
+		margin-top:0
+	}
+	main {
+		padding:90px 5px 5px 30px;
+		margin:0;
+		width:100%;
+	}
+	section, article,details div, aside#formulaire, aside#infos-contact, h1, h2, h3, iframe {
+		display:block;
+		width:100%;
+		text-align:left;
+	}
+	article {
+		margin-bottom:30px;
+	}
+	article#second {
+		margin:0 0 20px 0;
+	}
+	details div {
+		left:0;/* au dessous de details div */
+	}
+	section h3 {
+		text-transform:none;
+		font-size:23px;			
+	}
+	section#realisations ul li {
+		margin:3px;
+		width:45%;
+		height:auto;
+		float:left; /* pour alignement de la dernière image */
+		text-align:center !important;
+	}
+	section#realisations ul li a img  {
+		width:95%;
+		height:auto;
+	}
+	button {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	aside#formulaire, aside#infos-contact {
+		width:99%;
+		margin-top:20px;
+		margin-bottom:10px;
+	}
+	section#contact {
+		clear:both;
+	}
+	input, textarea {
+		width:95%;
+	}
+
+}
+/* @media screen and (max-width:480px) {*/
+@media screen and (max-width:480px) {
+	nav, button, summary {
+		background-color:#A4C910;
+		color:#8B2322;
+	}
+
+	section h3 {
+		color:#A4C910;
+	}
+	summary:after {
+		color: #8B2322;
+}
+}

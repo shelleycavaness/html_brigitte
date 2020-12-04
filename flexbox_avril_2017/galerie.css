@@ -1,0 +1,22 @@
+* {
+	-o-box-sizing:border-box;	
+	-webkit-box-sizing:border-box;	
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	/* marges et espacements a zero */
+	margin: 0;
+	padding: 0;
+	 /* instruction pour d'anciennes versions d'IE qui n'interprètent pas la déclaration margin:0 auto; du container  */
+	text-align: center;
+}
+#container {
+	/* centrer le bloc container dans la fenetre du navigateur avec des marges automatiques a gauche et a droite et donner une largeur au bloc container */
+	margin: 0 auto; 
+	width: 970px;
+	/* caractéristiques du texte */
+	font-size: 12px; 
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: justify;
+}

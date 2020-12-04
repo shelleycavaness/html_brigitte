@@ -1,0 +1,126 @@
+* {
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box; 
+box-sizing: border-box;
+margin:0;
+padding:0;
+} 
+html {
+	font-size:62.5%;
+}
+/* declaration pour IE */
+html, body, main, section, article, aside {
+	display:block;
+}
+
+
+nav{
+	background-color: rgb(127, 6, 6); 	
+	position: fixed;
+	width: 330px;
+	height: 800px;
+}
+nav ul{
+	margin-top: 100px; 
+	border: solid green 2px;
+	list-style-type: none;
+	float: right;
+
+}
+nav li a {
+	padding-top: 50px;
+	color: white;
+	font-size: 30px; 
+	text-decoration: none;
+	text-align: right;
+	font-family: CenturyGothic;
+	font-variant: small-caps;
+}
+
+
+
+main {
+	width: 660px;
+	margin-left: 340px;
+	border: 5px solid green;
+	font-family: "Century Gothic", CenturyGothic;
+	font-variant-caps: normal;
+}
+
+section h1{
+	text-align: right;
+}
+
+#sous-titre {	
+	color:DarkGrey;	
+	border-bottom: 10px solid lightgrey;
+	font-size:  15px;
+	font-family:  CenturyGothic;
+	text-align: right;
+}
+
+div img{
+	float: left;
+}
+.zone-separation {
+	height: 10px;
+	width: auto;
+	margin: 10px 0 10px 0;
+	border-bottom: 1px dotted rgb(150, 144, 144);
+	background-color: Aqua;
+	clear: both;
+}
+
+/article{
+	border: 2px solid rgb(231, 171, 234);
+		background-color: peachpuff; 
+
+	}
+
+#icon-container {
+	border: solid yellow 1px;
+	display: flex;
+	/*flex-wrap: wrap;*/
+	justify-contnet:flex-wrap;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+h4 {
+	text-align: left;
+}
+
+article p{
+	text-align: justify;
+}
+
+summary {
+	display: inline;
+	background-color: red;
+	border: solid grey 1px;
+}
+
+
+
+/*  this is the portfolio*/
+h2 {
+	text-align: right;
+}
+section p {
+	text-align: right;
+}
+
+
+section ul li{
+display:  inline-block;
+margin: 10px;
+border: 4px solid Lightgrey;
+}
+section h3{
+	color: rgb(127, 6, 6); 
+}
+
+
+
+
+
+

@@ -1,0 +1,246 @@
+* {
+	-o-box-sizing:border-box;	
+	-webkit-box-sizing:border-box;	
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0; /* marges et espacements a zero */
+	padding: 0;
+	text-align: center; /* instruction pour d'anciennes versions d'IE qui ne comprennent pas la déclaration margin:0 auto;  */
+}
+#container {
+	margin: 0 auto; /* centrer le bloc container dans la fenetre du navigateur avec des marges automatiques a gauche et a droite */
+	width: 970px;
+	font-size: 12px; font-size:1.2rem; /* caractéristiques du texte */
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: justify;
+}
+header {  
+	padding:0 40px 0 0; /* pour espacer item du bord droit */
+	height:60px; 
+	background-image: url(../galerie-images/header-fond.gif);
+	
+	/* module flexbox pour positionner  le titre h1 et la navigation  côte à côte */
+	display:flex;
+	flex-direction:row; /* declaration pas utile car row est la valeur par défaut */
+	justify-content: space-between; /* agencement sur l'axe principal : l'espace horizontal, on met de l'espace entre titre et la navigation */
+	align-items:center; /* agencement sur l'axe secondaire : l'espace vertical.*/
+
+}
+h1 span{
+	display: none; /* je maintiens (dans le code html) le titre de niveau1 utile au référencement mais je le cache (en css)car j'ai introduit une image a la place */
+}
+
+
+ul#menu, ul.sous-menu, ul#galerie-vignettes { 
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	font-weight:bold;
+}
+
+ul#menu {	
+	/* module flexbox pour positionner les items du menu de navigation ul#menu li côte à côte */ 
+	display:flex;
+	flex-direction:row; /* declaration pas utile car row est la valeur par défaut */
+	justify-content: space-between; /* agencement sur l'axe principal : l'espace horizontal */
+	align-items:center; /* agencement sur l'axe secondaire : l'espace vertical */
+}
+ul#menu li { /* tous les items qui se trouvent dans le menu, que ce soit ceux du menu principal ou des sous-menus et dans le footer*/
+	padding:6px 10px; /* pour étoffer l'item; */
+}
+ul#menu a { /* tous  liens qui se trouvent dans le menu */
+	text-decoration:none;
+	color:white;
+	outline:none;
+}
+ul#menu>li:hover {  /* au passage du curseur sur l'item du menu "li:hover" la couleur de fond  devient noire. Ne concerne que les items du menu principal*/
+	background-color:#000;
+}
+ul.sous-menu { /* les sous-menus "ul.sous-menu" n'apparaissent pas à l'ouverture de la page */
+	display:none; /* on cache */
+}
+ul#menu li:hover ul.sous-menu {/* reapparition du sous-menu "ul.sous-menu" au survol d'un item du menu "li:hover" */
+	display:block;  /* on fait réapparaître */
+	position:absolute; /* pour stabiliser le contenu */
+	margin-top:5px; /* espace le sous menu du menu */
+}
+ul.sous-menu li { /* Les items des sous-menus ont une largeur de 180px et une marge en haut de 1px */
+	background-color:#000;
+	width:180px;
+	margin-top:1px; /* espace les items */
+}
+ul.sous-menu>li:hover{  /* La couleur de fond des items du sous-menu change au survol du bouton */
+	background-color:#c00;	
+}
+/******************** fin liste déroulante **************************/
+/* bloc content partie haute */
+#content-top { 
+	padding: 0 40px 15px 40px;
+	background: url(../galerie-images/content-haut-fond.gif) no-repeat;
+	
+	/* module flexbox pour positionner  la div#grande-photo et la liste ul#galerie-vignettes côte à côte*/
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between; /* agencement sur l'axe principal : l'espace horizontal */
+	align-items:center; /* agencement sur l'axe secondaire : l'espace vertical */
+}
+#grande-photo h3 {
+	font-variant: small-caps;
+	font-size: 16px; font-size:1.6rem; 
+	margin:15px 0;
+	padding:0;
+}
+#grande-photo img {
+	border: 0 solid #ccc;
+	}
+ul#galerie-vignettes {
+	/* module flexbox pour positionner  les items de la liste ul#galerie-vignettes (qui ont par défaut un comportement block), les unes à côté des autres)*/
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: space-between; /* agencement sur l'axe principal : l'espace horizontal */
+	align-items:center; /* agencement sur l'axe secondaire : l'espace vertical */
+	/* corrections pour plus d'espace */
+	margin-top:37px; 
+	margin-left:10px;	
+}
+ul#galerie-vignettes li {
+	margin:1px;
+}
+ul#galerie-vignettes li img {
+	border: 1px solid #ccc;
+}
+#content-bottom {
+	padding: 0 40px 20px 40px;
+	background-image: url(../galerie-images/content-bas-fond.gif);
+	
+	/* module flexbox pour positionner les articles les uns à côté des autres */
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: space-between; 
+}
+article {
+	/* élément du module flexbox pour indiquer la largeur des articles */
+	flex-basis:32%; /* fonctionne avec flex-wrap déclaré précédemment */
+}
+#content-bottom h2, footer h2 {
+	font-variant: small-caps;
+	line-height:40px;
+}
+#content-bottom  h2 {
+	background-image:url(../galerie-images/etoile-bleue.gif);
+	background-repeat:no-repeat;
+	background-position:top left;
+	padding-left:30px;
+	margin:10px 0;
+}
+p.suite  {
+	text-align:right;
+}
+p.suite a {
+	text-decoration:none;
+	color:#336e9c;
+	font-style:italic;
+}
+footer {
+	padding:10px 50px;
+	color: #ccc;
+	background-image: url(../galerie-images/footer-fond.gif);
+	line-height:22px;
+	text-align:left;
+	
+	/* module flexbox pour positionner les blocs du footer les uns a côté des autres */
+	display:flex;
+	flex-direction:row; 
+	justify-content: space-between;
+}
+footer a { /* tous  liens qui se trouvent dans le menu */
+	text-decoration:none;
+	color:white;
+	outline:none;
+}
+div.bloc {
+	flex-basis:33%;
+}
+
+@media screen and (max-width: 800px) { /* Valide la version mobile des outils : https://ready.mobi/ */
+	.no-mob {
+		display:none;
+	}
+	#container, header, h1, nav, section#content-top, div#grande-photo, ul#galerie-vignettes , section#content-bottom, footer {
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	header {
+		background-size:contain; 
+		height:80px; /* image de fond retravaillée : 80px de haut (.png)*/
+		flex-direction:column; 
+	}
+	h1 { 
+		padding-top:5px;
+	}
+	ul#menu {	
+	justify-content: center; /* modification de l'agencement sur l'axe principal : l'espace horizontal auparavant space-between*/
+	}
+	#content-top {
+		text-align:center;
+		flex-direction:column;
+		align-items:center;
+	}
+	ul#galerie-vignettes {
+		background-color:#2E6693;
+		margin-top:10px;
+		padding-bottom:10px;
+		justify-content :center; /* modification précédente déclaration valeur space-between */
+	}
+	img {
+		max-width:100%; /* occupe au maximum 100% de la largeur de l'écran. Si l'image est plus petite elle occupera moins de 100%. 
+		Ne pas indiquer width:100% qui correspond à la largeur d'origine de l'image qui, si elle est plus large que l'écran du terminal utilisé ne sera pas vu entièrement */
+		height:auto;
+	}
+	article {
+		flex-basis:49%;
+		padding:5px 10px;
+	}
+	div.bloc {
+		padding:5px 10px;
+	}
+
+}
+@media screen and (max-width: 480px) {
+	ul#menu li ul.sous-menu li { 
+		width:150px;
+	}
+	ul#galerie-vignettes {
+		background-color:#33709F;
+	}
+	article {
+		flex-basis:100%;
+	}
+	footer {
+		flex-wrap:wrap;
+	}
+
+	.bloc {
+		flex-basis: 49%;
+	}
+	div.bloc:nth-of-type(2) {
+		display:none;
+	}
+	div.bloc:first-of-type { /* le premier bloc qui a plus de contenu que les autres est rendu flexible, il peut au besoin occuper plus d'espace */
+		flex-grow:1; 
+	}
+}
+@media screen and (max-width: 320px) {
+
+	.bloc {
+		width:100%;
+	}
+}

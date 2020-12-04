@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>boxes samedi exercice</title>
+		<style>
+			/* codage css de l'exercice */
+* {
+	-o-box-sizing:border-box;	
+	-webkit-box-sizing:border-box;	
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+#container{
+	display: flex;
+	flex-direction: row;
+	}
+section{
+width:30%;
+margin:auto 0;
+}
+
+section:first-child{
+padding: 20px;
+}
+section:nth-child(2){
+margin:20px;
+}
+section:last-child{
+padding: 20px;
+margin:20px;
+}
+.yellow{
+	
+	border: solid black 1px;
+	background-color:yellow;
+}
+.red{
+	
+	background-color:red;
+	padding:20px;
+	border: solid black 1px;
+}
+</style>
+	</head>
+	<body>
+		<!-- codage html de l'exercice -->
+		<h1>Padding et margin</h1>
+		<div id="container">
+		
+			<section>
+			<h2>Padding 20px</h2>
+			<div class="yellow">
+			<p>Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtextedans chacun.Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtexte dans chacun.</p>
+			</div>
+			<div class="red">
+			<p>Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtextedans chacun.Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtexte dans chacun.</p>
+			</div>
+			</section> <!--section1-->
+			
+			<section>
+			<h2>Margin 20px</h2>
+			<div class="yellow">
+			<p>Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtextedans chacun.Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtexte dans chacun.</p>
+			</div>
+			<div class="red">
+			<p>Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtextedans chacun.Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtexte dans chacun.</p>
+			</div>
+			</section><!--section2-->
+			
+			
+			<section>
+			<h2>Padding +margin 20px</h2>
+			<div class="yellow">
+			<p>Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtextedans chacun.Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtexte dans chacun.</p>
+			</div>
+			<div class="red">
+			<p>Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtextedans chacun.Dans un bloc container de 650px de large, construire 2 blocs. Insérer directement du fauxtexte dans chacun.</p>
+			</div>
+			</section>
+			<!--section3-->
+			
+			
+			
+			<!-- <div id="green">
+			</div>
+			<div id="blue">
+			</div> -->
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

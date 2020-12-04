@@ -1,0 +1,28 @@
+function displayPics() 
+{ 
+    var photos = document.getElementById('galerie-vignettes') ; 
+    // On récupere dans une variable "photos" l'élément ayant pour id galerie-vignettes - cad la liste a puce
+    var liens = photos.getElementsByTagName('a') ; 
+    // On récupere dans une variable "liens" les  liens contenus dans galerie-vignettes - lien vers la grande photo
+   
+   var big_photo = document.getElementById('big_pict') ; 
+    // On récupere dans la variable "big_photo" l'élément ayant pour id big_pict, cad  la photo d'origine (pas la vignette) 
+   var titre_photo = document.getElementById('grande-photo').getElementsByTagName('h3')[0] ; 
+    // On récupere dans la variable "titre_photo" le titre "h3" situé dans le bloc grande photo
+ 
+    // Une boucle parcourt l'ensemble des liens contenu dans galerie_mini 
+    for (var i = 0 ; i < liens.length ; ++i) { 
+        // Au clic sur une vignette liée
+        liens[i].onclick = function() { 
+            big_photo.src = this.href; // la grande photo correspondant au lien activé est appelée  et s'affiche 
+             big_photo.title = this.title; // Le titre de la grande photo (valeur de l'attribut title de la balise a) est appelé
+           titre_photo.firstChild.nodeValue = this.title; // et s'affiche en remplacement du  texte précédent
+            return false; // Arret de la boucle
+        }; 
+    } 
+} 
+window.onload = displayPics; 
+// Cette fonction est appelée au chargement de la page 
+// ou sur la page html <body onload="displayPics();" >
+
+        

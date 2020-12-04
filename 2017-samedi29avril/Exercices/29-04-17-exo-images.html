@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>boxes samedi exercice</title>
+		<style>
+			/* codage css de l'exercice */
+* {
+	-o-box-sizing:border-box;	
+	-webkit-box-sizing:border-box;	
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+#container{
+	display: flex;
+	flex-direction: row;
+	 align-items: flex-start;
+	}
+section{
+	width:24%;
+	margin:auto 0;
+}
+img{
+background-color:#ccc;
+border:solid orange 6px;
+}
+#padding img{
+	padding:20px;
+}
+
+
+</style>
+	</head>
+	<body>
+		<!-- codage html de l'exercice -->
+		
+		
+		<div id="container">
+		<section>
+			<h2>sans Padding</h2>
+			<img src="images/apple.gif" alt="apple">
+			<img src="images/reseau.jpg" alt="reseau">
+		</section>
+		<section id="padding">
+			<h2>Padding 20px</h2>
+			<img src="images/apple.gif" alt="apple">
+			<img src="images/reseau.jpg" alt="reseau">
+		</section>
+		<section id="margin">
+			<h2>margin 20px</h2>
+			<img src="images/apple.gif" alt="apple">
+			<img src="images/reseau.jpg" alt="reseau">
+		</section>
+		<section id="padding-margin">
+			<h2>margin +Padding 20px</h2>
+			<img src="images/apple.gif" alt="apple">
+			<img src="images/reseau.jpg" alt="reseau">
+		</section>
+		
+		
+		
+		</div>
+	</body>
+</html>

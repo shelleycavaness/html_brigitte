@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Propriété box-decoration-break</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				margin:0;
+				padding:0;
+				text-align:center;
+			}
+			#container{
+				width: 970px;
+				margin: 20px auto;
+				padding:20px;
+				text-align: justify;
+				line-height: 25px;
+				border:1px solid orange;
+				border-radius: 5px;
+			}
+			section {
+				column-count: 2; /* Nombre de colonnes */
+				column-rule: 1px dashed orange;/* trait de séparation */
+				column-gap: 25px; /* goutière */
+			}
+
+			.box-decoration-clone{
+				color: white;
+				border-radius: 5px;
+				border: 1px solid black;
+				background: orangered;
+				background: linear-gradient(to right,orangered,deepskyblue);
+				padding: 0 8px;
+				-webkit-box-decoration-break: clone;
+				-moz-box-decoration-break: clone;
+				-o-box-decoration-break: clone;
+				box-decoration-break: clone;
+
+			}
+			.box-decoration-slice{
+				color: white;
+				border-radius: 5px;
+				box-shadow: 0 0 5px black;
+				border: 1px solid black;
+				background: navy;
+				background: linear-gradient(to right,orangered,deepskyblue);
+				padding: 0 8px;
+				-webkit-box-decoration-break: slide;
+				-moz-box-decoration-break: slide;
+				-o-box-decoration-break: slide;
+				box-decoration-break: slide;
+			}
+			#valeurs li {
+				margin-bottom:10px;
+			}
+		@media (max-width: 500px){
+			#container {
+				width: 90%;
+			}
+			section{
+				column-count: 1;
+				column-gap: 0;
+			}
+	}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="container">
+			<section>
+				<h2>Propiété box-decoration-break</h2>
+				<p>Un groupe de mots peut se retrouver scindé en plusieurs fragments lors d'un passage à la ligne ou sur une autre colonne.</p> <p><strong>La propriété box-decoration-break</strong> permet de définir le style css d’affichage d'un groupe de mots scindé en plusieurs fragments. <br />
+				Cette nouvelle propriété des CSS3 admet deux valeurs: <strong>slice</strong> (valeur par défaut) et <strong>clone</strong></p>
+
+				<ul id="valeurs">
+					<li><span class="box-decoration-slice"><strong>slice</strong> : chaque fragment est considéré comme faisant partie d'un seul élément. La mise en forme se fait sur le groupe de mots.</span></li>
+					<li><span class="box-decoration-clone"><strong>clone</strong>: chaque fragment est indépendant. La mise en forme se fait sur chaque fragment qui  a ses propres bordures, marges, arrière-plans</span></li>
+				</ul>
+				<p>Chaque groupe de mots ciblé a été isolé grâce à la balise span à laquelle on a attribué une classe box-decoration-slice et box-decoration-clone.</p> 
+				<p>Lorsque la valeur slice est utilisée : <strong>box-decoration-break: slice;</strong> le style est appliqué à l'ensemble du groupe de mots et s'il y a dégradé, l'effet se fait sur la globalité. <br />
+				Lorsque la valeur clone est utilisé : <strong>box-decoration-break: clone;</strong> chaque fragment est impacté par les différentes propriétés et le dégradé s'effectue indépendamment pour chaque fragment.</p>
+				<p>Cette propriété n'est pas encore supportée par tous les navigateurs, utilisez les préfixes propriétaires. </p>
+			</section>
+		</div>
+	</body>
+</html>

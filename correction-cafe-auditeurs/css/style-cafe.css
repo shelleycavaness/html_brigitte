@@ -1,0 +1,200 @@
+* {
+-webkit-box-sizing:border-box; 
+-moz-box-sizing:border-box; 
+-o-box-sizing:border-box;
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+body {
+text-align:center; /* instruction pout IE centre le container et tout ce qui est dedans */
+background-color:#2c1204;
+}  
+#container {
+width:970px;
+margin:0 auto; /* instructions pour les autres navigateurs que IE pour centrer le bloc container */
+text-align:justify; /* pour contrer l'instruction text-align:center déclarée dans le body. Tout ce qui est dans le container n'est plus centré mais justifié */
+font-family:"century gothic", arial; 
+font-size:13px;
+}
+header {
+position:relative; /* pour positionnement nav en absolu */
+height:307px; /* déclaration d'une hauteur pour pouvoir voir l'image de fond */
+background:url(../images/fond-header.png);  
+}
+header h1 {
+padding:5px 20px; 
+font-size:24px; 
+text-transform:uppercase;
+font-weight:normal;   /* supprime le caractere gras */
+color:#d7c6a2;
+}
+
+nav {
+position:absolute; /* position absolue à 0 du bas et 20px de la gauche du header (header déclaré précédemmment en relatif) */
+bottom:0; 
+left:20px; 
+}
+
+nav  ul{
+list-style-type:none; /* suppression des puces */
+}
+
+nav ul li{
+display:inline-block; /* les items alignés les uns à côté des autres */
+vertical-align:top;
+padding-right:20px;
+font-size:16px;
+text-transform:uppercase;
+line-height:32px;
+}
+
+nav ul li a{
+text-decoration:none;    
+color:#d7c6a2;
+}
+
+nav ul li a:hover {
+color:#cbbb98;
+}
+main {
+display:block;
+position:relative;
+background-color:#fff;
+}
+
+section {
+display:inline-block; /* positionné a côté du bloc aside */
+vertical-align:top;
+width:775px;
+line-height:18px; 
+padding:45px 45px 45px 70px;
+}
+section  h2, article h3 {
+font-size:26px; 
+color:#462932; 
+margin:40px 0 0 0;
+font-weight:normal;   
+}
+article h3 {
+font-size:24px;
+}
+article h4 {
+margin:10px 0 30px 0;
+color:#000;
+font-size:20px;
+font-weight:normal; 
+}
+
+section a {
+color:#d7c6a2;
+text-decoration:none; 
+font-weight:bold; 
+}
+section a:hover {
+text-decoration:underline; 
+color:#2c1204; 
+}
+
+figure {
+margin-top:30px;
+text-align:center;
+}
+
+aside { 
+height:100%; /* trois instructions pour pouvoir afficher l'image de fond de aside sur toute la hauteur */
+width:195px;
+position:absolute;
+background:url(../images/fond-aside.png);
+display:inline-block;/* positionné a côté du bloc section  */
+vertical-align:top;
+padding:40px 0 0 20px;
+text-align:left;  /* probleme avec justify donc modification */
+}
+aside h2 {
+font-size:16px;
+margin-bottom:10px;
+color:#d7c6a2; 
+text-transform:uppercase; 
+font-weight:normal;   
+}
+aside ul {
+list-style-type:none;
+margin-bottom:20px;  
+}
+aside ul li {
+line-height:25px;
+}
+aside li a {
+color:#f0eadc; 
+text-decoration:none;
+}
+aside li a:hover {
+text-decoration:underline;
+}
+
+footer {
+text-align:center;
+background-color:#2c1204;   
+}
+
+footer p { 
+line-height:60px; 
+color:#d7c6a2; /* j'avais oublié de coder la couleur du texte hors liens, je le fais ici */
+ 
+}
+
+footer a { 
+color:#d7c6a2; 
+text-decoration:none;  
+}
+footer a:hover { 
+text-decoration:underline;  
+}
+#grains-animes {
+	margin-top:20px;
+}
+
+/* ************************************************ MOBILE */
+@media screen and (max-width:600px) {
+	/* le codage mobile modifie les instructions données précédement pour la version ordinateur */
+	#container {
+		width:100%; /* supprime la largeur 970px */
+	}
+	header h1 {
+		padding:10px; 
+	}
+	nav {
+		left:0; /* pour contrer le left : 20px de la version ordinateur */
+		padding:5px;
+		background-color:#2c1204; 
+		text-align:center;		
+	}
+
+	section {
+		width:100%; /* supprime la largeur 775px */
+		padding:25px 8px; /* diminue les paddings */
+	}
+	figure {
+		margin-top:25px; /* diminue la marge haute */
+	}
+	img {
+		max-width:100%; /* les images occupent au maximum 100% de la largeur de l'écran, ne sera jamais plus grand; la hauteur est proportionnelle a la largeur */
+		height:auto;
+	}
+	aside {
+		position:static; /* pour contrer la position:absolute */
+		width:100%; /* supprime la largeur 195px */
+		background-size:contain; /* l'image de fond du bloc aside s'étale dans tout le bloc */
+		padding:20px 0 0 8px; /* diminue les paddings */
+	}
+	aside div {
+		display:inline-block; /* les div sont positionnées côte à côte et font 1/3 de la largeur */
+		vertical-align:top;
+		width:32.5%;
+	}
+	footer p {
+		padding:8px;
+		line-height:30px;/* interlignage de 30px pour etoffer le footer et centrer le texte qui est écrit sur une seule ligne */
+	}
+}

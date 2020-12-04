@@ -1,0 +1,186 @@
+* {
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-o-box-sizing:border-box;
+box-sizing:border-box;
+}
+html {
+font-size: 62.5%;
+}
+body {
+margin:0;
+padding:0;
+text-align:center;
+}
+#container {
+width:970px; 
+margin:0 auto;
+font-size: 12px; font-size:1.2rem; /* caractéristiques du texte */
+font-family: Arial,Helvetica,sans-serif;
+text-align: justify;
+}
+header { 
+height: 60px;
+background-image: url(../galerie-images/header-fond.gif);
+}
+a {
+outline:0;	
+}
+h1, nav {
+display:inline-block;
+vertical-align:middle;
+}
+h1 span{
+display: none; /* je maintiens le titre de niveau1 utile au référencement mais je le cache car j'ai introduit une image a la place */
+}
+h1 {
+width:49%;
+}
+
+/*menu*/
+
+nav {
+width:45%;
+}
+ul { /* pas de puces sur les listes et tous les espacements et marges à zéro */
+list-style-type:none;
+margin:0;
+padding:0;
+}
+ul#menu li { /* Les items de la liste principale sont 'horizontalisés' */
+display:inline-block;
+vertical-align:top;
+}
+ul#menu li a {
+padding:6px 10px;
+margin-left: 1px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+outline:none;
+}
+ul#menu li a:hover {  /* au passage du curseur sur l'item, coloration en noir */
+background-color:black;
+}
+ul#menu li ul.sous-menu { /* les sous-menus n'apparaissent pas à l'ouverture de la page */
+display:none;
+}
+ul#menu li:hover ul.sous-menu {
+display:block;  /* reapparition du sous-menu lors du survol sur item */
+position:absolute;/* pour satbiliser le menu déroulant */
+padding-top:6px;
+}
+
+ul#menu li ul.sous-menu li {
+display: block;
+background-color:black;
+}
+ul#menu li ul.sous-menu li a { /* Les boutons des sous-menus  auront une largeur de 130px et une marge en haut de 1px */
+display:block;
+width:180px;
+margin-top:1px;
+}
+ul#menu li ul.sous-menu li a:hover{  /* La couleur de fond change au survol du bouton */
+background-color:#c00;
+}
+
+/* bloc content partie haute */
+#content-top { /* bloc content partie haute */
+/* height: 360px;*/
+padding: 0 30px 20px 40px;
+background-image: url(../galerie-images/content-haut-fond.gif);
+background-repeat: no-repeat;
+}
+#content-top ul {
+margin:0;
+padding:0;		
+}
+#grande-photo { /* bloc pour insérer la grande photo, bloc flottant a gauche */
+display:inline-block;
+vertical-align:top;
+width: 65%;
+}
+#grande-photo h3 {
+font-variant: small-caps;
+font-size: 16px; font-size:1.6rem; 
+margin:15px 0;
+padding:0;
+}
+#grande-photo img {
+border: 1px solid #ccc;
+}
+ul#galerie-vignettes {
+display:inline-block;
+vertical-align:top;
+padding-top:30px;
+width:36%;
+margin-right:-30px;
+}
+ul#galerie-vignettes li { /* les items vignettes sont sorties du flux, elles flottent dans le bloc de 400px de large, elles seront distribuées sur deux rangées */
+display:inline-block;
+vertical-align:top;
+margin: 1px 3px;
+float:left; /* pour regler le decalage de la derniere image */
+}
+ul#galerie-vignettes li img {
+border: 1px solid #ccc;
+}
+ul#galerie-vignettes li a {
+outline:none;
+}
+
+#content-bottom {
+/* height: 400px; */
+padding: 0 40px;
+background-image: url(../galerie-images/content-bas-fond.gif);
+}
+article {
+display:inline-block;
+vertical-align:top;
+width:31%;
+height:190px;
+margin:8px;
+/*float:left;  pour regler le decalage de la derniere image */
+}
+#content-bottom h2 {
+background-image:url(../galerie-images/etoile-bleue.gif);
+background-repeat:no-repeat;
+background-position:top left;
+padding-left:35px;
+margin:10px 0;
+}
+p.suite  {
+text-align:right;
+margin-top:-7px;
+}
+p.suite a {
+text-decoration:none;
+color:#336e9c;
+font-style:italic;
+}
+#content-bottom h2, #footer h2 {
+font-variant: small-caps;
+line-height:40px;
+}
+footer {
+position:relative; /* pour positionner par la suite le bloc copyright en absolu */
+padding-left:40px;
+/*height: 230px;*/
+color: #ccc;
+background-image: url(../galerie-images/footer-fond.gif);
+line-height:22px;
+text-align:left;
+}
+.bloc {
+display:inline-block;
+vertical-align:top;
+width:30%;
+margin:8px;
+/* float:left; pour regler le decalage de la derniere image */
+}
+#copyright {
+position:absolute;
+bottom:10px;
+height:20px;
+font-style:italic;
+}

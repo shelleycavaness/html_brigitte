@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dégradé radial</title>
+		<style>
+			
+#container1, #container2, #container3, #container4 { display:inline-block; vertical-align: top; height :200px ;
+width:200px; margin-right:15px;}
+#container1{
+background :-webkit-radial-gradient(40px 100px, closest-side, red 10%, green 30%, blue 50%, yellow 80%) ;
+background :-o-radial-gradient(40px 100px, closest-side, red 10%, green 30%, blue 50%, yellow 80%) ;
+background :-moz-radial-gradient(40px 100px, closest-side, red 10%, green 30%, blue 50%, yellow 80%) ;
+background : radial-gradient(closest-side at center red 10%, green 30%, blue 50%, yellow 80%) ;
+}
+#container2 {
+background :-webkit-radial-gradient(40px 100px, farthest-side,  red 10%, green 30%, blue 50%, yellow 80%) ;
+background :-o-radial-gradient(40px 100px,farthest-side, red 10%, green 30%, blue 50%, yellow 80%) ;
+background :-moz-radial-gradient(40px 100px,farthest-side, red 10%, green 30%, blue 50%, yellow 80%) ;
+background : radial-gradient(farthest-side at center,red 10%, green 30%, blue 50%, yellow 80%) ;
+}
+#container3 {
+background :-webkit-radial-gradient(40px 100px, closest-corner , red 10%, green 30%, blue 50%, yellow 80%) ;
+background :-o-radial-gradient(40px 100px,closest-corner, red 10%, green 30%, blue 50%, yellow 80%) ;
+background :-moz-radial-gradient(40px 100px,closest-corner, red 10%, green 30%, blue 50%, yellow 80%) ;
+background : radial-gradient(closest-corner at 40px 100px,red 10%, green 30%, blue 50%, yellow 80%) ;
+}
+#container4 {
+background :-webkit-radial-gradient(40px 100px, farthest-corner , red 10%, green 30%, blue 50%, yellow 80%) ;
+background :-o-radial-gradient(40px 100px,farthest-corner, red 10%, green 30%, blue 50%, yellow 80%) ;
+background :-moz-radial-gradient(40px 100px,farthest-corner, red 10%, green 30%, blue 50%, yellow 80%) ;
+background : radial-gradient(farthest-corner at 40px 100px,red 10%, green 30%, blue 50%, yellow 80%) ;
+}
+
+		</style>
+	</head>
+	<body>
+		<div id="container1">closest-side</div>
+		<div id="container2">farthest-side</div>
+		<div id="container3">closest-corner</div>
+		<div id="container4">farthest-corner</div>
+	</body>
+</html>
