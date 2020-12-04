@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Animation d'un objet</title>
+		<style>
+			* {
+				box-sizing:border-box;
+			}
+			#boule {
+				position:relative; /* fonctionnement du déplacement left */
+				width : 200px;
+				line-height: 200px;
+				text-align:center;
+				font-family:"century gothic";
+				font-size:30px;
+				color:#fc3;
+				border-radius:100px;
+				box-shadow:0 0 100px #000;
+				margin-left: 100px;
+				margin-top: 100px;
+				animation: objetAnime 5s linear infinite alternate; 
+			}
+			@keyframes objetAnime
+			{
+				from {
+						background-color: rgba(153,0,0,1);
+						left:0px;
+						-moz-transform: rotate(0deg);
+						transform: rotate(0deg);
+
+					}
+				50% {
+						background-color:rgba(153,0,0, .1);
+						-moz-transform: scale(1.5) ;
+						transform: scale(1.5) ;
+					}
+
+				to {
+						background-color:rgba(153,0,0, 1);
+						left:600px;
+						-moz-transform: rotate(180deg);
+						transform: rotate(180deg);
+					}	
+
+			}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+
+	<body>
+		<h2>Un objet en mouvement</h2>
+		<div id="boule" >:)</div>
+	</body>
+</html>

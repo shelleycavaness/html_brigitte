@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>exemple sprite cours</title>
+		<style>
+			ul li  {
+				display:inline-block; /* pour aligner les boutons les uns à côté des autres */
+				margin:2px; /*pour espacer les items donc leur image de fond */
+			/*L'image de fond globale fait 404px de large sur 126px de haut. 
+			Chaque image destinée à chaque "li" fait 202px de large sur 63px de haut*/
+				width:202px;  /*on attribue une largeur */
+				height:63px; /* et une hauteur */
+				background:url(sprite.png) no-repeat 0 0;  /* insertion de la même image de fond sous tous les items */
+				}
+				/* li identifiée par démo est ramenée de 202px vers la gauche, sa position verticale n'est pas modifiée  */
+			/*ul li#demo {
+				background-position: -202px 0; 
+
+				}
+			ul li#down:hover {
+				background-position: 0 -63px; 
+			}
+			ul li#demo:hover {
+				background-position: -202px -63px; 
+				}*/
+		</style>
+	</head>
+	<body>
+		<h2></h2>
+		<nav>
+			<ul>
+				<li id="down"></li>
+				<li id="demo"></li>
+			</ul>
+		</nav>
+	</body>
+</html>
+		

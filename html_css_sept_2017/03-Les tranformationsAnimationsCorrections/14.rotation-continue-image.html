@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<title>keyframe animation rotation</title>
+
+		<style>
+			* {
+				box-sizing:border-box; 
+			}
+			#rotation-en-continu img{
+				animation: rotate 3s infinite;
+			}
+			@keyframes rotate{
+				from{ transform:rotate(0deg)}
+				to{ transform:rotate(360deg) }
+			}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+	<body>
+	<div id="rotation-en-continu">
+	<img src="images/formation-informatique-depannage-paris.jpg" alt="formation informatique" title="d�pannage informatique paris" />
+	</div>
+	</body>
+</html>

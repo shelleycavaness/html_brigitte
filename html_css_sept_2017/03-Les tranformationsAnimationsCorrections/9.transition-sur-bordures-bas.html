@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<title>Effet transition bordures bas</title>
+		<style type="text/css">
+			* {
+				box-sizing:border-box; 
+			}
+			#effet-transition-bordure-bas {
+				height:50px;
+			}
+			#effet-transition-bordure-bas a{
+				padding: 0 10px;
+				color:#999;
+				text-decoration:none;
+				border-bottom:1px solid #006699;
+				transition: border .6s ease-in;
+			}
+			#effet-transition-bordure-bas a:hover{
+				border-bottom:20px solid #006699;
+			}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+
+	<body>
+		<div id="effet-transition-bordure-bas">
+			<a href="#">A propos</a>
+			<a href="#">Accueil</a>
+			<a href="#">CSS3</a>
+			<a href="#">HTML5</a>
+		</div>	
+	</body>
+</html>

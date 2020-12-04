@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Le site de Watphan</title>
+	</head>
+
+	<body>
+			<div id="container">
+            <header>
+				<h1>Le site de Watphan</h1>
+			</div>
+            <nav></nav>
+            <section>
+<!--  premiere �tape : d�claration de l'image sur laquelle vont se positionner les zones cliquables, avec un nouvel attribut < usemap > ayant pour valeur (#) suivi du nom (zones) de la carte utilis�e. -->
+<div>
+<img src="../watphan-images/watphan.jpg" alt="watphan" title="watphan" usemap="#zones" /> 
+<!--  d�claration de l'ouverture de la carte avec le nom et l'identifiant -->
+<map name="zones" id="zones">
+  <!-- d�claration pour chaque  zone a cliquer, de sa forme et ses coordonn�es, le lien vers lequel elle pointe et comme tres souvent en XHTML et CSS, les attributs alt et title -->
+  <!--  zone a cliquer, polygone -->
+  <area shape="poly" coords="370,80,420,80,445,110,385,120,360,110,370,80" href="pavillon-femmes.html" alt="pavillon des femmes" title="pavillon des femmes" />
+  <!--  zone a cliquer, polygone --> 
+  <area shape="poly" coords="330,80,315,115,250,115,260,90,330,80" href="pavillon-hommes.html" alt="pavillon des hommes" title="pavillon des hommes" />
+  <!--  zone a cliquer, cercle --> 
+  <area shape="circle" coords="125,105,95" href="frangipaniers.html" alt="les frangipaniers" title="Frangipaniers en fleurs" />
+  <!--  zone a cliquer, rectangle --> 
+  <area shape="rect" coords="235,40,405,70" href="barrays.html" alt="les reservoirs" title="les barrays" />
+<!--  possibilit� pour le reste de l'image :
+<area shape="default" href="site-watphan-hors-zones.html" alt="le site de WatPhan"  title="le site de WatPhan" /> -->
+</map>
+</div>
+
+</section>
+            <footer></footer>
+        </div>
+    </body>
+</html>

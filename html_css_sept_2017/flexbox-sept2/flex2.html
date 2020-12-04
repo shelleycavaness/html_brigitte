@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flexbox2</title>
+    <meta charset="utf-8"/>
+    <style>
+        .global{
+            width: 100vw;
+            height:200px;/*100% of what? what is declared in pixel or screen-one vaule must be fixed for the percentage to recognize some value. either the parent or the child must have a value*/
+            background-color: darkgray;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+         
+            
+            
+        }
+        div{
+            width: 200px;
+            /*width: 200vw; view width*/
+            min-width: 200px; /*if you dont put a minium it doesn't know when to wrap it shrink infinity*/
+            height: 200px; /*100vh view height*/
+            background: red;
+            color:white;
+            font-size: 20px;
+            text-align: center; 
+        }
+           
+        div:nth-child(2){background-color: green;
+            
+        }
+        div:nth-child(3){background-color: orange;
+        }
+   
+      
+        
+    </style>
+</head>
+<body>
+    <div class="global">
+        <div class="red">red</div>
+        <div class="green">green</div>
+        <div class="orange">orange</div>
+         
+    </div>
+    <div class="global">
+        <div class="red">red</div>
+        <div class="green">green</div>
+        
+    </div>
+    
+ 
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  <script>  
+</script>
+</body>
+</html>

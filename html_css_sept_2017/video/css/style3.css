@@ -1,0 +1,24 @@
+
+#bgvideo{
+    position: fixed;
+    top:0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size:cover;
+}
+
+div{
+    width: 560px;
+    height: 100vh;
+    margin: auto;
+    background: rgba(0,0,0,.65);
+}
+
+audio{width: 560px;
+height: auto;
+    margin: auto;
+}

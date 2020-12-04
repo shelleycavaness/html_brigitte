@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<title>Effet transition largeur + hauteur bloc + couleurs</title>
+		<style> 
+			#effet-transition-largeur-hauteur-bloc  {
+				width: 150px;
+				height: 150px;
+				background-color: #c00;
+				line-height:150px;
+				transition: width 5s, height 10s, line-height 10s, font-size 10s, background-color 5s;
+			}
+			#effet-transition-largeur-hauteur-bloc:hover {
+				width: 600px;
+				height:600px;
+				background-color: #003;
+				line-height:600px;
+				font-size:50px;
+			}
+			h1 {
+				text-align:center;
+				text-transform:uppercase;
+				color:white;
+			}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+	
+	<body>
+		<div id="effet-transition-largeur-hauteur-bloc">
+			<h1>css</h1>
+		</div>
+	</body>
+</html>

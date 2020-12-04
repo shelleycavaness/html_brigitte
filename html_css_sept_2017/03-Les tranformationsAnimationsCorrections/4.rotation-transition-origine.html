@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<title>Rotation Transition</title>
+		<style> 
+			* {
+				box-sizing:border-box;
+			}
+			div {
+				width: 100px;
+				height: 100px;
+				background: #c00;
+				transform-origin: 90% 90%;
+				transition: all 2s;
+				margin:50px;
+			}
+			div:hover {
+				transform: rotate(180deg);
+			}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+	
+	<body>
+		<div></div>
+	</body>
+</html>

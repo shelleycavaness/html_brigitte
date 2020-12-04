@@ -1,0 +1,136 @@
+
+
+.global{
+    width: 640px;
+    height: auto;
+    margin: auto;
+}
+/**/
+.container{
+    max-width: 320px;
+    float: left;
+    margin-bottom: 50px;
+}
+.container{
+    perspective: 250px;
+    margin-bottom: 50px;
+}
+
+/*basculer le voler au survole*/
+.container:hover .page{
+    transform: rotateY(180deg);
+}
+.container, .devant, .arriere{
+    width: 320px;
+    height: 480px;
+}
+
+.page{transition: .6s;
+position: relative;
+transform-style: preserve-3d}
+
+/*cacher la face du font*/
+.devant, .arriere{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.devant{
+    z-index: 2;
+    transform: rotateY(0deg);
+    background:red;
+    }
+
+.arriere{
+    transform: rotateY(180deg);
+    background: black;
+    border-radius: 20px;
+    padding: 25px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a{display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: orange;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;    
+}
+
+/*axe verticle*/
+.vertical.container{
+    position: relative;
+}
+.vertical .arriere2{
+    transform: rotateX(180deg);
+}
+
+.vertical.container:hover .arriere2{
+    transform: rotateX(0deg);
+}
+
+.vertical.container:hover .devant2{
+    transform: rotateX(180deg);
+}
+.container, .devant2,.arriere2{
+    width: 320px;
+    height: 480px;
+}
+
+
+.page2{transition: .6s;
+position: relative;
+transform-style: preserve-3d}
+
+/*cacher la face du font*/
+.devant2, .arriere2{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*basculer le voler au survole*/
+.container:hover .page2{
+    transform: rotateX(-180deg);
+    transform-origin: 0px 240px;
+}
+.devant2{
+    z-index: 2;
+    transform: rotateX(0deg);
+}
+.arriere2{
+    transform: rotateX(180deg);
+    background-color: yellow;
+    border-radius: 25px;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

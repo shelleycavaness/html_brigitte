@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<title>zoom sur image avec effets de transition</title>
+		<style>
+			* {
+				box-sizing:border-box;
+			}
+			div{
+				width:100px;
+				height:100px;
+				overflow:hidden;
+				/* -webkit-box-shadow: 2px 2px 2px #ccc;*/
+				box-shadow: 2px 2px 2px #ccc;  
+			}
+			img{
+				width:100px;
+				height:100px;
+			}
+			img:hover{
+				/* -webkit-transform:scale(1.75); Safari and Chrome */
+				/* -moz-transform:scale(1.75); Firefox */
+				/* -ms-transform:scale(1.75); IE */
+				/* -o-transform:scale(1.75); Opera */
+				transform:scale(1.75);
+			}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+	
+	<body>
+		<h1>Effet Zoom sur une Image avec transformation:scale()</h1>
+		<div>
+			<img src="images/formation-informatique-depannage-paris.jpg" alt="formation informatique" title="dépannage informatique paris" />
+		</div>
+	</body>
+</html>

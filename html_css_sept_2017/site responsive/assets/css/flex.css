@@ -1,0 +1,211 @@
+*{margin: 0;
+padding: 0}
+
+
+.large{
+    background: white;
+    height: 46px
+}
+.simple{ border: none!important;
+}
+
+img.toto{display:block;max-width:100%;height:auto}
+
+header.orange{
+    width: 100vw;
+    height: auto;
+    min-width: 320px;
+    background: orange;
+    color: white
+}
+h1, h3{ margin: 0;
+padding: 10px;
+}
+/*parent donc en flex*/
+section.content{
+width: 100vw;
+background: transparent;
+margin: 0;
+padding: 0;
+display: flex;
+-moz-display:flex;
+-o-display:flex;
+-ms-display:flex;
+-webkit-display:flex;
+flex-flow: wrap row;
+-moz-flex-flow: wrap row;
+-o-flex-flow: wrap row;
+-ms-flex-flow: wrap row;
+-webkit-flex-flow: wrap row;
+}
+
+article.bloc{
+width: 50vw;
+height: auto;
+min-width: 320px;
+background: beige;
+overflow: auto;
+flex:1}
+
+article.bloc:nth-child(2){
+    background: burlywood;
+    display: flex;
+    flex-flow: wrap row
+}
+
+header.titre{
+    margin: 10px;
+    background: red;
+    width: 100vw;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white
+}
+
+p.description, p.chapitre{padding: 25px;
+box-sizing: border-box}
+
+div.txt{
+    width: 24vw;
+    height: auto;
+    background: rgba(255,255,255,.6);
+    flex: 1;
+    min-width: 320px;
+    margin: 10px
+}
+
+footer.about{
+    background: black;
+    height: 50px;
+    width: 100vw;
+    color: aliceblue;
+    padding: 10px;
+    box-sizing: border-box
+    
+    
+}
+
+/*si customs de toggle */
+
+button.navbar-toggle.collapsed.fond:hover{background: red}
+button.navbar-toggle.fond.collapsed{background: white}
+nav.navbar.navbar-default.simple{border-collapse: inherit}
+
+/*menu hamburger */
+
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    background:rgba(255,255,255,.6);
+ 
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background: red;
+}
+
+
+/*declaration d'activite du nav toggle*/
+
+@media screen and (min-width:420px) and (max-width:767px){
+    
+
+    .navbar-toggle {
+        display: block;
+        margin-top: 30px;
+        float: none
+        
+    }
+   
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100vw
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    
+   div.container.large{
+    padding-right: 60px;
+   background: black;
+   width: 100vw;
+    height: auto;} 
+    
+    header.orange{
+    width:100vw;
+    height:auto;
+    min-width: 320px;
+    background: black;
+    color: white}
+    
+    .navbar-default .navbar-nav>li>a {
+    color: #777;
+    background:rgb(255,255,255);
+ 
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background: red;
+}
+}
+
+
+@media screen and (max-width:419px){
+     .navbar-toggle {
+        display: block;
+        margin-top: 30px;
+        float: none
+                
+    }
+   
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 220px
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    
+   div.container.large{
+    padding-right: 60px;
+   background: black;
+   width: 100vw;
+    height: auto;} 
+    
+    header.orange{
+    width:100vw;
+    height:auto;
+    min-width: 320px;
+    background: black;
+    color: white}
+    
+    .navbar-default .navbar-nav>li>a {
+    color: #777;
+    background:rgb(255,255,255);
+ 
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background: red;
+}
+}
+
+

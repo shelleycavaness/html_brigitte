@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<title>Rotation transformation hauteur et largeur transition</title>
+		<style>
+
+div {
+position:relative; /* pour faire fonctionner le déplacement left */
+width :50px;
+height :50px;
+line-height:50px;
+text-align:center;
+border-radius :25px;
+background-color: orange ;
+color:#fff;
+font-weight:bold;
+animation: rouleBille linear 2s infinite alternate;
+}
+@keyframes rouleBille {
+0% {transform: rotate(90deg); left:0px;}
+100% {transform: rotate(360deg); left:200px;}
+}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+
+	<body>
+		<div>
+			:=
+		</div>
+	</body>
+</html>

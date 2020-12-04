@@ -1,0 +1,131 @@
+/* format ordiportable = 1280px */
+@media screen and (min-width: 1246px) and (max-width:1679px){
+    
+*{margin: 0;
+padding: 0}
+    
+div.wrap{
+width: 100vw; /*up*/
+min-width: 1024px; /*max min to not compress too much into sticks rather than going under*/
+height: auto;
+margin: auto}
+
+header{background: red;
+        width: 100%;
+        height: auto}
+
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif; color: white;
+text-align: center;
+padding: 5px;
+box-sizing: border-box}
+
+nav{ width: 100vw;
+    height: 46px;
+background-color: gainsboro;
+    border: 1px solid black
+}
+main{width: 100vw;
+height: 100vh;
+background-color: antiquewhite}
+
+article:not(.autres){
+    height: auto;
+    width: 91280px;
+    min-width: 320px;
+    background: pink;
+
+}
+
+article header{ background: green;
+width:100%;
+height: auto}
+
+div.zone{ 
+width: 100%;
+height: 150px;
+max-height: auto;
+background: gray
+}
+
+
+figure{ width: 150px;
+height: 150px;
+background: white;
+    float: left
+   
+}
+
+p{ max-width: 800px;
+   min-width: 180px;
+ font-family: 'Roboto', sans-serif;
+    color: white;
+   padding: 15px;
+    box-sizing: border-box;
+        float:left
+}
+
+section{width: 100%;
+height: auto}
+
+article.autres{
+    max-width: 950px;
+    min-width: 330px;
+    height: 200px;
+    background: blue}
+
+article.autres:nth-child(3){
+background: pink}
+
+
+
+footer{background: black;
+float: left;
+width: 100%;
+height:80px; }
+
+
+footer a{display: inline-block;
+width: 200px;
+height:auto;
+margin-left: 5px;
+color: white;
+text-decoration: none;
+line-height: 80px}
+
+
+/*droite
+aside {float: left;
+background-color: burlywood;
+height: auto;
+min-height: auto
+ }*/
+
+
+div.bloc{ max-width: 530px;
+min-width: 320px;
+height: 209px;
+color: white;
+    padding: 25px;
+    box-sizing: border-box;
+    visibility:hidden;    
+}
+    /*end of @media */
+    
+
+
+}
+
+@media screen and (min-width: 780px) and (max-width:979px){}
+ /*landscape view of tablet*/
+@media screen and (min-width: 480px) and (max-width:779px){}
+    /*tablette format*/
+@media screen and (min-width: 321px) and (max-width:479px){
+        /*smartphone*/
+
+
+    
+    
+    
+}
+    

@@ -1,0 +1,123 @@
+/* CSS device adaptation */
+
+
+
+
+@media screen and (max-width:480px){
+   
+    @viewport{ width:device-width;
+        zoom:1
+            }
+    
+    *{margin: 0;
+    padding: 0}
+    
+    header{ height: 493px;
+            width: 100vw;
+            background: red}
+    
+    .logo{background: url(../images/logo.gif) 0 0 no-repeat;
+    max-width: 480px;
+    min-width: 320px;
+    height: 75px;
+    margin: auto;
+    background-size: 100% 100%;
+    text-indent: -9000px}
+    
+    .zone{height: 418px;
+            width: 100vw;
+            }
+    
+    ul.bloc{list-style: none}
+    
+    ul.bloc li.smart{
+        display: block;
+        width: 50vw;
+        height: 209px;
+        line-height: 209px;
+        text-align: center;
+        float: left
+    } 
+    
+    ul.bloc li.smart{
+        text-indent: -9000px;
+        background: url(../images/qui.gif);
+        width: 50vw;
+        height: 209px;
+        display: block;
+        background-size: 100% 100%
+    }
+    
+    ul.bloc li.smart:nth-child(2){
+        background: url(../images/service.gif)
+    }
+    
+    ul.bloc li.smart:nth-child(3){
+        background: url(../images/formation.gif)
+    }
+    
+    ul.bloc li.smart:nth-child(4){
+        background: url(../images/nous.gif) no-repeat
+            #240d0d
+    }
+    
+    ul.bloc li.smart a{
+        display: block;
+        width: 50vw;
+        height: 209px;
+        transition: 500ms;
+        background-color: rgba(0,0,0,0.5)
+    }
+    
+    ul.bloc li.smart a:hover{
+          transition: 500ms;
+        background-color: rgba(0,0,0,0)
+    }
+    section.content{
+        width: 100vw;
+        height: 100vh;
+        background: orange
+    }
+    section.content:nth-of-type(2n+0){
+        background: red
+    }
+    
+    h2{font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: beige;
+    padding: 12px 0px 12px 20px}
+    
+    hr{ width: 80px;
+        border: 2px solid gray}
+    
+    .cursor      { position:fixed;
+    height: 20px;
+    width: 20px;
+    top: 90vh;
+    right: 5px;
+    z-index: 10;
+    background: url(../images/cursor.png)}
+  
+    
+    article.contenu{color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 25px 26px 0px 20px}
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

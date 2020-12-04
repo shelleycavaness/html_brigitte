@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8" />
+		<title>Le site de Watphan au Laos</title>
+	</head>
+
+	<body>	
+		<div id="container">
+            <header>
+				<h1>Le site de Watphan au Laos</h1>
+			</header>
+            <nav></nav>
+            <section>
+			<h2>Les pavillons</h2> 
+				<img src="watphan-images/watphan-zones.jpg" alt="watphan" title="watphan" usemap="#zones" /> 
+				<!--  déclaration de l'ouverture de la carte avec le nom et l'identifiant -->
+				<map name="zones" id="zones">
+						  <!-- déclaration pour chaque  zone a cliquer, de sa forme et ses coordonnées, le lien vers lequel elle pointe et comme tres souvent en XHTML et CSS, les attributs alt et title -->
+						  <!--  zone a cliquer, polygone -->
+						<area shape="poly" coords="370,80,420,80,445,110,385,120,360,110,370,80" href="watphan-pages/pavillon-femmes.html" alt="Le Pavillon des Femmes sur le site de Watphan au Laos" title="Le Pavillon des Femmes" />
+						  <!--  zone a cliquer, polygone --> 
+						<area shape="poly" coords="330,80,315,115,250,115,260,90,330,80" href="watphan-pages/pavillon-hommes.html" alt="Le Pavillon des Hommes sur le site de Watphan au Laos" title="Le Pavillon des Hommes" />
+						  <!--  zone a cliquer, cercle --> 
+						<area shape="circle" coords="125,105,95" href="watphan-pages/frangipaniers.html" alt="Frangipaniers en fleurs sur le site de Watphan au Laos" title="Frangipaniers en fleurs" />
+						  <!--  zone a cliquer, rectangle --> 
+						<area shape="rect" coords="235,40,405,70" href="watphan-pages/barrays.html" alt="Les reservoirs  sur le site de Watphan au Laos" title="Les deux réservoirs" />
+						<!--  possibilité de coder pour le reste de l'image : -->
+						<area shape="default" href="watphan-pages/site-watphan-hors-zones.html" alt="le site de WatPhan"  title="le site de WatPhan" />
+				</map>
+			</section>
+            <footer></footer>
+        </div>
+    </body>
+</html>

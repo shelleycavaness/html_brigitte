@@ -1,0 +1,66 @@
+<!--les selector-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>css secetores</title>
+    <style>
+        * {box-sizing: border-box;}
+        h2 ~ p {color: red;} //'~' is the same as the + sign
+         a[href="#toto"]{color:orange;}
+        div[title]{background: green;}
+        div{width: 200px; height: 200px; 
+            background: purple;}
+        div > span {background: orange;}
+        span{background: khaki;}
+        p>span {color: chocolate;}
+        a[data-filetype="image"]{background: url(pictogram-airport-icon-download.png) no-repeat; 
+            padding-left: 50px; }
+        a{display: block; 
+            height:50px; width:100px; line-height: 50px; 
+            text-decoration: none;
+        }
+
+        a[href^="http"]{background: url(pictogram-airport-icon-download.png) no-repeat; 
+            padding-left: 50px;}
+        a[href="https://codepen.io/pen/"]{background: url(pictogram-airport-icon-download.png) no-repeat; 
+        color: crimson;
+            padding-left: 50px;}
+
+
+        
+    </style>
+
+</head>
+<body>
+    <h2>selctor descendant</h2>
+    <p>li a{text-decoration:none} <br>
+    </p>
+    <h2>pseudo class</h2>
+    <p>cibler les balises d'ancres -ancor tags</p>
+    <a href="#toto">ancors</a>
+    <div title="rien"></div>
+    <div></div>
+
+
+    <div>
+        <span>first span 
+            <!--this is the direct child-->
+            <span>2nd span inside</span>
+                   <!--  this is the INdirect child-->
+        </span>
+
+    </div>
+    <p title="tttt">loren ibpusm thihi is ia long wparagraph parachrath paragraph paragraph</p>
+
+
+    <a href="#" data-filetype="image">Orange</a> <!--you recuperat the image in css thanks to the data-filetype rather than <img-->
+    <a href="https://html5.validator.nu/">page 1</a>
+   <a href="https://codepen.io/pen/">page 2</a>
+      <a href="https://html5.validator.nu/">page 3</a>
+
+
+
+
+</body>
+</html>

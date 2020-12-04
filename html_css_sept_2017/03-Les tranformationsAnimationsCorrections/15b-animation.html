@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Animation d'un objet RouleBalle</title>
+		<style>
+			* {
+			box-sizing:border-box;
+			}
+			#balle {
+			position:relative; /* fonctionnement du déplacement left */
+			top:100px;
+			width : 200px;
+			line-height: 200px;
+			text-align:center;
+			font-family:"century gothic";
+			font-size:30px;
+			color:#fc3;
+			border-radius:100px;
+			box-shadow:0 0 100px #000;
+			transition:all 1s;
+			animation: rouleBalle 3s linear infinite alternate; 
+			}
+			@keyframes rouleBalle{
+				from {
+					background-color: rgba(153,0,0,1);
+					left:100px;
+					transform: rotate(0deg);
+				}
+				50% {
+					background-color:rgba(153,0,0, .1);
+					transform: scale(1.5) rotate(90deg);
+					color:#c00;
+				}
+				to {
+					background-color:rgba(153,0,0, 1);
+					left:700px;
+					transform: rotate(180deg);
+				}	
+			}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+
+	<body>
+		<h2>Un objet en mouvement</h2>
+		<div id="balle">:)</div>
+	</body>
+</html>

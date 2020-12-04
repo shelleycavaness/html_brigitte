@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<title>Rotation transformation hauteur et largeur transition</title>
+		<style>
+			div, img{
+				width:100px;
+				height:100px;
+			}
+			img{
+				transition: width 2s, height 6s;
+			}
+			img:hover{
+				width:200px;
+				height:200px;
+			}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+
+	<body>
+		<h1>Un Effet Zoom sur une Image + effet de transtion sur la largeur et la hauteur</h1>
+		<div>
+			<img src="images/formation-informatique-depannage-paris.jpg" alt="formation informatique" title="dépannage informatique paris" />
+		</div>
+	</body>
+</html>

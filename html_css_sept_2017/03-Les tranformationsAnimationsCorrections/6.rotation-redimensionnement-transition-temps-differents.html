@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<title>Rotation Redimensionnement Transition temps différents</title>
+		<style> 
+		div {
+			width: 100px;
+			height: 100px;
+			background: #c00;
+			transition: width 10s, height 5s, transform 3s;
+			margin:50px;
+		}
+		div:hover {
+			width: 200px;
+			height: 200px;
+			transform: rotate(180deg);
+		}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

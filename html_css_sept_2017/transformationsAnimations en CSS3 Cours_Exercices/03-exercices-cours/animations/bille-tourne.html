@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8" />
+		<title>Animation d'un objet TourneBille</title>
+		<style type="text/css">
+			* {
+				box-sizing:border-box; 
+			}
+			#bille{
+				width:50px;
+				height:50px;
+				margin:100px;
+				text-align:center;
+				color:white;
+				font-weight:bold;
+				font-size:30px;
+				border-radius:25px;
+				background-color:#c00;
+				animation: tourneBille 4s infinite  linear;  /* animation immédiate à l'ouverture */
+			}
+			@keyframes tourneBille {
+				from {
+					transform:rotate(0deg); 
+				} 
+				to {
+					transform:rotate(360deg);
+				}
+			}
+		</style>
+		<script src="javaScript/prefixfree.min.js"></script>
+	</head>
+	<body>
+		<div id="bille">°°</div> 
+	</body>
+</html>

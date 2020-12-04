@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>  
+    
+    <!-- HEADER-->
+    <header class="bkg-main"> 
+        <div class="wrap-logo">
+            <h1>Mrs.Bô</h1>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav class="main-menu">
+        <div class="contener">
+            <div class="logo-menu">
+                <h3>Mr.Bô</h3>
+            </div>
+            <ul>
+                <li><a href="#about" class="js-scrollTo">About</a></li>
+                <li><a href="#blog" class="js-scrollTo">Blog</a></li>
+                <li><a href="#spirit" class="js-scrollTo">Spirit</a></li>
+                <li><a href="#contact" class="js-scrollTo">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>        
+        <!-- ABOUT -->
+        <section id="about">           
+            <div class="contener">
+                <div class="title">
+                    <h2>Welcome to my world</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+                <div class="flex-box about">
+                    <div class="items">
+                        <h3>Short Story</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,.</p>
+                    </div>
+                    <div class="items skills">
+                        <h3>Skills</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,.</p>
+                        <span class="pourcent1">Writing</span>
+                        <span class="pourcent2">Cooking</span>
+                        <span class="pourcent3">Coding</span> 
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- BLOG -->
+        <section id="blog">
+            <div class="contener">
+                <div class="title">
+                    <h2>Blog</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+            </div>
+            <div class="flex-box blog">
+                <div class="items">
+                    <article>
+                        <div class="flex-box-center">
+                            <div class="items">
+                                <img src="images/img1.jpg" alt="" />
+                            </div>
+                            <div class="items">
+                                <h3>My puppy with a mustache</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="items">
+                    <article>
+                        <div class="flex-box-center">
+                            <div class="items">
+                                <img src="images/img1.jpg" alt="" />
+                            </div>
+                            <div class="items">
+                                <h3>My puppy with a mustache</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="contener">
+                <div class="btn-medium"><a href="#">Load more</a></div>
+            </div>
+        </section>
+        
+        <!-- SPIRIT -->
+        <section id="spirit">
+            <div class="contener">
+                <div class="title">
+                    <h2>Spirit</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="bkg-spirit">
+                <p>
+                    Create
+                    <br/>
+                    Think
+                    <br/>
+                    Dream
+                </p>
+            </div>
+        </section>
+        
+        <!-- TESTIMONIALS -->
+        <section id="testimonials">
+            <div class="contener">
+                <div class="title">
+                    <h2>What they say</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+                <div class="testimonials flex-box-center">
+                    <div class="item-l">
+                        <img src="images/img1.jpg" alt="" />
+                    </div>
+                    <div class="item-r">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mintempor incididunt ut labore et dolore magna aliqua. Ut enim ad min
+                        <br/><br/>
+                        <span>Victoria, Vogue</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PARTNERS -->
+        <div id="partners">
+            <div class="partners contener flex-box">
+                <div class="items-4"><img src="partners/img1.png" /></div>
+                <div class="items-4"><img src="partners/img2.png" /></div>
+                <div class="items-4"><img src="partners/img3.png" /></div>
+                <div class="items-4"><img src="partners/img4.png" /></div>
+            </div>
+        </div>
+        
+        <!-- CONTACT -->
+        <section id="contact">            
+            <div class="contener">
+                <div class="title">
+                    <h2>Contact</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+                <div class="form">
+                    <form>
+                        <input type="text" name="Name" placeholder="Name">
+                        <input type="email" name="E-mail" placeholder="E-mail">
+                        <textarea name="Message" placeholder="Message"></textarea>
+                        <input type="submit" value="Envoyer le formulaire" class="btn-medium">
+                    </form>
+                </div>
+            </div>
+        </section>      
+    
+    </main>
+    
+    <!-- FOOTER --> 
+    <footer class="footer-main">
+        <div class="pattern"></div>
+        <div class="bkg-logo">                    
+            <div class="logo-footer">
+                <p>MR.BO</p>
+            </div>
+        </div>        
+    </footer>
+</body>
+</html>

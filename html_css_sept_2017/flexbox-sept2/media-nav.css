@@ -1,0 +1,40 @@
+
+
+navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+        margin-top: 30px
+    }
+   
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    
+   div.container.large{
+    padding-right: 60px;
+   background: black;
+   width: 100vw;
+    height: auto;} 
+    
+    header.orange{
+    width:100vw;
+    height:auto;
+    min-width: 320px;
+    background: black;
+    color: white}

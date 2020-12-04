@@ -1,0 +1,102 @@
+@media screen and (min-width:960px){
+   
+    @viewport{ width:device-width;
+        zoom:1
+            }
+    
+    *{margin: 0;
+    padding: 0}
+    
+    header{ height: 418px;
+            width: 100vw;
+            background: url(../images/lascars.jpg) 0 115px no-repeat;
+    background-size: 100% 100%
+    }
+    
+    .logo{background: url(../images/logo.gif) center no-repeat black;
+    width: 100vw;
+    height: 75px;
+    position: fixed;
+    z-index: 3;
+    top:40px}
+    
+    
+    nav{ width: 100vw; height: 40px; position: fixed;
+        z-index:4 ;background: black}
+    
+    .zone{height: 418px;
+            width: 100vw;
+            }
+    
+    ul.bloc{list-style: none}
+    
+    ul.bloc li.smart{
+        display: block;
+        width: 25vw;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        float: left
+    } 
+    
+
+    
+    ul.bloc li.smart a{
+        text-decoration: none;
+       color: white
+    }
+    
+    ul.bloc li.smart a:hover{
+        display: block;
+        width: 25vw;
+        height: 40px;
+        text-decoration: none;
+        color: black;
+        background: blanchedalmond
+     
+    }
+    section.content{
+        width: 100vw;
+        height: 100vh;
+        padding-top: 120px;
+        background: orange;
+        box-sizing: border-box
+    }
+    
+    section.content:nth-of-type(2n+0){
+        background: red
+    }
+    
+    h2{font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: beige;
+    padding: 12px 0px 12px 20px}
+    
+    hr{ width: 80px;
+        border: 2px solid gray}
+    
+   
+  
+    
+    article.contenu{color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 25px 15px 0px}
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
